@@ -12,6 +12,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var touchNode: SKSpriteNode!
     var touchJoint: SKPhysicsJointSpring?
     var penguinJoint: SKPhysicsJointPin?
+    var buttonBack: MSButtonNode!
 
     
     override func didMove(to view: SKView) {
@@ -42,6 +43,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         /* Set physics contact delegate */
         physicsWorld.contactDelegate = self
+        
+        buttonBack = self.childNode(withName: "//buttonBack") as! MSButtonNode
+        
+        buttonBack.selectedHandler = {
+            self.loadLevelSelect()
+        }
 
 
     }
@@ -226,6 +233,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             resetCamera()
         }
     }
+    
+    func loadLevelSelect() {
+        /* 1) Grab reference to our SpriteKit view */
+        guard let skView = self.view as SKView! else {
+            print("Could not get Skview")
+            return
+        }
+        
+        /* Load Game scene */
+        guard let scene = GameScene(fileNamed: "LevelSelect") else {
+            print("Could not load GameScene with level 1")
+            return
+        }
+        
+        /* 3) Ensure correct aspect mode */
+        scene.scaleMode = .aspectFit
+        
+        /* Show debug */
+        skView.showsPhysics = true
+        skView.showsDrawCount = true
+        skView.showsFPS = true
+        
+        /* 4) Start game scene */
+        skView.presentScene(scene)
+    }
+    
+
     
     
 }
