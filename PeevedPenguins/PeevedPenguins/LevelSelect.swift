@@ -25,21 +25,26 @@ class LevelSelect: SKScene {
     /* UI Connections */
     
     var level1: MSButtonNode!
+    var level2: MSButtonNode!
     
     override func didMove(to view: SKView) {
         /* Setup your scene here */
         
         /* Set UI connections */
         level1 = self.childNode(withName: "level1") as! MSButtonNode
+        level2 = self.childNode(withName: "level2") as! MSButtonNode
         
+        level2.selectedHandler = {
+            self.loadGame(level: 2)
+        }
         
         level1.selectedHandler = {
-            self.loadGame()
+            self.loadGame(level: 1)
         }
         
     }
     
-    func loadGame() {
+    func loadGame(level: Int) {
         /* 1) Grab reference to our SpriteKit view */
         guard let skView = self.view as SKView! else {
             print("Could not get Skview")
@@ -47,7 +52,7 @@ class LevelSelect: SKScene {
         }
         
         /* Load Game scene */
-        guard let scene = GameScene.level(1) else {
+        guard let scene = GameScene.level(level) else {
             print("Could not load GameScene with level 1")
             return
         }
