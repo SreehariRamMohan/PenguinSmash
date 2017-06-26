@@ -11,6 +11,7 @@
 		F79514571EFD87B400DBEADE /* Poof.sks in Resources */ = {isa = PBXBuildFile; fileRef = F79514561EFD87B400DBEADE /* Poof.sks */; };
 		F795145B1EFD8BEB00DBEADE /* sfx_seal.caf in Resources */ = {isa = PBXBuildFile; fileRef = F795145A1EFD8BC800DBEADE /* sfx_seal.caf */; };
 		F795145F1EFDDDFB00DBEADE /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795145E1EFDDDFB00DBEADE /* LevelSelect.swift */; };
+		F7A91F701F0087BC003278EB /* Level_2.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7A91F6F1F0087BC003278EB /* Level_2.sks */; };
 		F7C6C8221EFB2D65006AC89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6C8211EFB2D65006AC89A /* AppDelegate.swift */; };
 		F7C6C8241EFB2D65006AC89A /* Level_1.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7C6C8231EFB2D65006AC89A /* Level_1.sks */; };
 		F7C6C8261EFB2D65006AC89A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7C6C8251EFB2D65006AC89A /* Actions.sks */; };
@@ -52,6 +53,7 @@
 		F79514561EFD87B400DBEADE /* Poof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Poof.sks; sourceTree = "<group>"; };
 		F795145A1EFD8BC800DBEADE /* sfx_seal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_seal.caf; sourceTree = "<group>"; };
 		F795145E1EFDDDFB00DBEADE /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
+		F7A91F6F1F0087BC003278EB /* Level_2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_2.sks; sourceTree = "<group>"; };
 		F7C6C81E1EFB2D65006AC89A /* PeevedPenguins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeevedPenguins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C6C8211EFB2D65006AC89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C6C8231EFB2D65006AC89A /* Level_1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_1.sks; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				F7C6C85F1EFB37D7006AC89A /* MSButtonNode.swift */,
 				F795145E1EFDDDFB00DBEADE /* LevelSelect.swift */,
 				F72725BA1EFDE52900E0AEB6 /* LevelSelect.sks */,
+				F7A91F6F1F0087BC003278EB /* Level_2.sks */,
 				F7C6C85B1EFB34DA006AC89A /* Penguin.swift */,
 				F795145A1EFD8BC800DBEADE /* sfx_seal.caf */,
 				F7C6C85D1EFB35FD006AC89A /* MainMenu.sks */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C6C8581EFB2F82006AC89A /* Bear.sks in Resources */,
+				F7A91F701F0087BC003278EB /* Level_2.sks in Resources */,
 				F7C6C85E1EFB35FD006AC89A /* MainMenu.sks in Resources */,
 				F72725BB1EFDE52900E0AEB6 /* LevelSelect.sks in Resources */,
 				F7C6C85A1EFB318E006AC89A /* CharacterActions.sks in Resources */,
